@@ -1,0 +1,92 @@
+.page-2{
+    min-height: 100vh;
+    width: 100%;
+    padding: 1.3vmax 3vmax;
+}
+
+.page2-top , .page3-top{
+    min-height: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 7%;
+    border-bottom: 2px solid gray;
+    padding-bottom: 1.3vmax
+}
+
+.p2-top-1, .p3-top-1{
+    width: 50%;
+}
+
+.p2-top-1.sec .p2-span  h2{
+    width: 100%;
+    text-align: right;
+}
+
+.p3-top-1.sec .p3-span  h2{
+    width: 100%;
+    text-align: right;
+}
+
+.p2-span , .p3-span{
+
+    position: relative;
+    height: 1.6em;
+    overflow: hidden;
+    display: block;
+}
+
+.p2-span h2{
+    font-size: 1.4em;
+    font-weight: lighter;
+    padding-bottom: 1vmin;
+    opacity: .86;
+    position: absolute;
+    top: 100%
+}
+
+.page2-btm {
+    width: 100%;
+    padding-top: 2vmax;
+}
+
+.p2-desc , .p3-desc{
+    width: 100%;
+    line-height: 1.2;
+}
+
+.p2-desc-h1 , .p3-desc-h1{
+    display: inline-block;
+    font-size: 3.9vmax;
+    font-weight: 200;
+    height: 5vmax;
+    opacity: .9;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.p2-desc-h1 span{
+    position: relative;
+    height: 5vmax;
+    top: 9vmax;
+    left: 0;
+    z-index: 3
+}
+
+
+@media (max-width: 1000px) {
+
+    .page2-top{
+        min-height: 10%;
+        padding-top: 7%;
+    }
+
+    .p2-top-1 h2{
+        font-size: .8em;
+        padding-bottom: .5em ;
+    }
+
+    
+}

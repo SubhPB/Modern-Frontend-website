@@ -1,0 +1,121 @@
+
+.page-1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: white;
+}
+
+.cursor{
+    height: 7.5vw;
+    width: 7.5vw;
+    border-radius: 50%;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: lighter;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+}
+
+.cursor h4{
+    font-weight: lighter;
+}
+
+.page-1 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 4;
+    position: absolute;
+}
+
+.page1-content{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 7;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2.4vw 3vw;
+}
+
+.nav-box{
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    height: 5vmax;
+}
+
+.nav-h3{
+    position: absolute;
+    width: 100%;
+    font-size: 1.5vmax;
+    font-weight: 500;
+    top: 0;
+    opacity: 0;
+}
+
+.nav-box.first .nav-h3{
+    left: 30%;
+}
+
+.nav-box.sec2 .nav-h3{
+    right: 25%;
+    text-align: right;
+    width: fit-content;
+}
+
+.page1-heading{
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    font-size: 28vh;
+    text-align: center;
+}
+
+.page1-heading h1{
+    font-weight: 100;
+    font-family:fantasy;
+}
+
+
+@media (max-width: 1000px) {
+
+    .nav{
+        padding: 4vw 2vw;
+    }
+
+    .cursor {
+        display: none;
+    }
+
+    .page1-heading{
+        display: none;
+    }
+
+    .nav-h3{
+        font-size: 2.3vmax;
+        font-weight: 400;
+    }
+
+    .nav-box.first .nav-h3{
+        line-height: 2.4;
+    }
+
+    .nav-box.sec2 .nav-h3{
+        border-radius: 20px;
+        border: 1.7px solid white;
+        padding: 1.3vmin 2.2vmin
+    }
+}

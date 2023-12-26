@@ -1,0 +1,96 @@
+.page-4{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-4 svg{
+    position: absolute;
+    height: 60%
+}
+
+.page-4 video{
+    height: 100%;
+    width: 100%;
+}
+
+.roll-div{
+    position: absolute;
+    width: 18vmax;
+    height: 18vmax;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.roll-div-top{
+    width: 100%;
+    text-align: center;
+    font-size: 2vmax;
+}
+
+.seats{
+    height: 2vmax;
+    display: inline-block;
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+.fix-seat{
+    display: none;
+}
+
+.seats h2{
+    position: relative;
+    font-size: 1.9vmax;
+    top: 0;
+    left: 0;
+}
+
+.seats h3{
+    width: 100%;
+}
+
+.roll-div h4{
+    font-size: 1.1vmax;
+    font-weight: 550
+}
+
+.roll-div h3{
+    margin-top: 1vmax;
+    padding: .3vmax 1vmax;
+    border: .8px solid white;
+    border-radius: 21px;
+    font-weight: 500;
+}
+
+@media (max-width: 1000px){
+    .page-4{
+        height: 80vh;
+    }
+
+    .page-4 svg{
+        height: 45%
+    }
+
+    .roll-div h4{
+        font-size: 2vmax;
+        font-weight: 550
+    }
+
+    .seats{
+        display: none;
+    }
+
+    .fix-seat{
+        display: block;
+        font-size: 2.6vmax
+    }
+
+}
